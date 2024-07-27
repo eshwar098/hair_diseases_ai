@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How It Works - Hair Sculpt AI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='work.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><a href="{{ url_for('home') }}">Scalp Disease Detection</a></div>
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{url_for('work')}}">How It Works</a></li>
+                <li><a href="{{url_for('upload')}}">Upload Image</a></li>
+                <li><a href="{{url_for('about')}}">About</a></li>
+                <li><a href="{{url_for('contact')}}">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="how-it-works">
+        <h1>How It Works</h1>
+        <div class="step">
+            <h2>Step 1: Upload an Image</h2>
+            <p>Use our easy upload tool to submit a clear image of your Hair & Scalp.</p>
+        </div>
+        <div class="step">
+            <h2>Step 2: AI Analyzes the Image</h2>
+            <p>Our AI model processes the image to identify any potential Scalp & Hair related diseases.</p>
+        </div>
+        <div class="step">
+            <h2>Step 3: Get Your Results</h2>
+            <p>Receive a detailed report on the identified disease and recommended actions.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Scalp Disease Detection. All rights reserved.</p>
+        <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
