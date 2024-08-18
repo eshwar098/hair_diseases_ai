@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Image - Hair Sculpt AI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='upload.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><a href="{{ url_for('home') }}">Scalp Disease Detection</a></div>
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{url_for('work')}}">How It Works</a></li>
+                <li><a href="{{url_for('upload')}}">Upload Image</a></li>
+                <li><a href="{{url_for('about')}}">About</a></li>
+                <li><a href="{{url_for('contact')}}">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="space"></div>
+    <h1 class="title">Hair & Scalp Diseases</h1>
+
+    <div class="slide-section">
+        <div class="box1 box">
+            <div class="box-content">
+                <div class="box-content">
+                    <div class="box-img" style="background-image: url('box1_image.jpg');">
+                        <img src="{{ url_for('static', filename='images/alopecia.jpg') }}" alt="">
+                    </div>
+                    <h2>Alopecia Areata</h2>
+                    <p>Alopecia refers to hair loss that occurs when the immune system mistakenly attacks hair follicles, leading to hair loss on the scalp or other parts of the body.</p>   
+                </div>   
+            </div>
+        </div>
+        <div class="box2 box">
+            <div class="box-content">
+                <div class="box-content">
+                    <div class="box-img" style="background-image: url('');">
+                        <img src="{{ url_for('static', filename='images/dandruff.jpg') }}" alt="">
+                    </div>
+                    <h2>Dandruff</h2>
+                    <p>Dandruff is a common scalp condition characterized by flakes of dead skin that appear as white or yellowish scales on the scalp and hair. It often results from the overgrowth of a yeast-like fungus called Malassezia, which thrives on the scalp's natural oils.</p>   
+                </div>   
+            </div>
+        </div>
+        <div class="box3 box">
+            <div class="box-content">
+                <div class="box-content">
+                    <div class="box-img" style="background-image: url('box1_image.jpg');">
+                        <img src="{{ url_for('static', filename='images/baldness.jpg') }}" alt="">
+                    </div>
+                    <h2>Baldness</h2>
+                    <p>Treatment options for baldness include medications like minoxidil or finasteride, hair transplant surgery, and lifestyle changes to promote scalp health. Baldness can impact self-esteem and quality of life, prompting individuals to seek cosmetic solutions..</p>   
+                </div>   
+            </div>
+        </div>
+        <!-- <div class="box4 box">
+            <div class="box-content">
+                <div class="box-content">
+                    <div class="box-img" style="background-image: url('box1_image.jpg');">
+                        <img src="{{ url_for('static', filename='images/alopecia.jpg') }}" alt="">
+                    </div>
+                    <h2>Alopecia</h2>
+                    <p>Alopecia refers to hair loss that occurs when the immune system mistakenly attacks hair follicles, leading to hair loss on the scalp or other parts of the body.</p>   
+                </div>  
+            </div>
+        </div> -->
+    </div>
+
+    <section class="upload-image">
+        <h1>Upload an Image</h1>
+        <div class="upload-container">
+            <form action="upload-file" method="post" enctype="multipart/form-data">
+                <label for="file-upload" class="file-upload">Choose File</label>
+                <input type="file" id="file-upload" name="image" accept="image/*">
+                <button type="submit" class="submit-btn">Upload</button>
+
+            </form>
+        </div>
+    </section>
+
+
+    <footer>
+        <p>&copy; 2024 Scalp Disease Detection. All rights reserved.</p>
+        <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+        </ul>
+    </footer>
+
+    <script>
+        document.querySelector('.file-upload').addEventListener('click', function() {
+            document.querySelector('#file-upload').click();
+        });
+    </script>
+</body>
+</html>

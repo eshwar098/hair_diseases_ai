@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Hair Sculpt AI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='about.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><a href="{{ url_for('home') }}">Scalp Disease Detection</a></div>
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{url_for('work')}}">How It Works</a></li>
+                <li><a href="{{url_for('upload')}}">Upload Image</a></li>
+                <li><a href="{{url_for('about')}}">About</a></li>
+                <li><a href="{{url_for('contact')}}">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="about">
+        <h1>About Scalp Disease Detection</h1>
+        <p>Welcome to our Scalp Disease Detection platform, where cutting-edge technology meets advanced dermatology to provide precise and timely diagnosis of scalp conditions. Our system harnesses the power of sophisticated machine learning algorithms and high-resolution image analysis to accurately identify a range of scalp diseases, including dandruff, alopecia, and scalp psoriasis. Designed with both patients and healthcare professionals in mind, our platform offers an intuitive interface for seamless image uploads and rapid diagnostic results.</p>
+        <p>Join us on our journey to enhance scalp health and improve the quality of life for millions affected by scalp conditions. Explore our platform today and discover how technology can transform the way we understand and manage scalp health.</p>
+    </section>
+
+    <section class="team">
+        <h2>Meet Our Team</h2>
+        <div class="member">
+            <img src="{{ url_for('static', filename='images/srividya.jpg') }}" alt="Team Member 1">
+            <h3>Mrs M.Srividya</h3>
+            <p>Assistant Professor</p>
+            <h4>Guide</h4>
+        </div>
+        <div class="member mem">
+            <img src="{{ url_for('static', filename='images/bg.jpg') }}" alt="Team Member 2">
+            <h3>C. Eshwar Kumar
+                <p>22R21A3315</p>
+            </h3>
+        </div>
+        <div class="member mem">
+            <img src="{{ url_for('static', filename='images/bg.jpg') }}" alt="Team Member 3">
+            <h3>K. Ravikanth     
+                <p>23R25A3302</p>
+            </h3>
+        </div>
+        <div class="member mem">
+            <img src="{{ url_for('static', filename='images/bg.jpg') }}" alt="Team Member 3">
+            <h3>B. Krethika Sai
+                <p>23R25A3305</p>
+            </h3>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Scalp Disease Detection. All rights reserved.</p>
+        <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

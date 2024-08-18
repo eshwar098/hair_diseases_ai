@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hair Sculpt AI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Scalp Disease Detection</div>
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{url_for('work')}}">How It Works</a></li>
+                <li><a href="{{url_for('upload')}}">Upload Image</a></li>
+                <li><a href="{{url_for('about')}}">About</a></li>
+                <li><a href="{{url_for('contact')}}">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+   
+    <section class="hero">
+        <div>
+            <h1>Revolutionizing Hair Health with AI</h1>
+            <p>Upload an image to diagnose Scalp & Hair related diseases</p>
+            <a href="http://localhost:8501" class="cta-button">Get Started</a>
+            
+        </div>
+    </section>
+
+    <section class="features">
+        <h2>Our Features</h2>
+        <div class="feature">
+            <h3>Accurate Image Recognition</h3>
+            <p>Our AI model provides precise analysis.</p>
+        </div>
+        <div class="feature">
+            <h3>Comprehensive Disease Descriptions</h3>
+            <p>Detailed information on identified diseases.</p>
+        </div>
+        <div class="feature">
+            <h3>Fast and Reliable Results</h3>
+            <p>Get results in just a few seconds.</p>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <h2>What Our Users Say</h2>
+        <p>"Hair Sculpt AI helped me identify my scalp condition quickly!"</p>
+        <p>"The accuracy of the results is amazing!"</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Hair Sculpt AI. All rights reserved.</p>
+        <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
